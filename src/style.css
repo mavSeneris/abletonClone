@@ -1,0 +1,94 @@
+/** Global Settings */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    /** Color Pallete */
+    --light: #fff;
+    --dark: #0b0b0b;
+    --line: #d5d5d5;
+    --yellow: #fbffa7;
+    --blue: #0000ff;
+    --light-blue: #b1c5ff;
+    --green: #b6ffc0;
+    --orange: #ff764d;
+    --pink: #d5b3ff;
+    /** Typograhphy */
+    /* fonts */
+    --ff-primary: 'Jost', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+    /* font-weights */
+    --fw-regular: 400;
+    --fw-bold: 500;
+    /* font-sizes */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+hr{
+    color: var(--line);
+    margin: none;
+}
+
+.is-active > a{
+    color: var(--orange);
+}
+
+
+/** Navbar-styles */
+.primary, .secondary {
+    display: flex;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+}
+
+.main-nav__logo {
+    width: 100px;
+    height: 100px;
+}
+
+.main-nav__link-list--primary {
+    display: flex;
+    width: 100vw;
+    gap: 30px;
+    padding: 12px 0 0 20px;
+}
+
+.main-nav__link-list--secondary {
+    display: flex;
+    width: 100vw;
+    gap: 30px;
+    padding: 12px 0 0 20px;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+}
+
+/* More + */
+.main-nav__link-list__item:nth-child(6) a{
+    color: var(--orange);
+}
+/* Try live for free */
+.main-nav__link-list__item--try a{
+    color: var(--blue);
+}
+
+.main-nav__link-list__item--try {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
