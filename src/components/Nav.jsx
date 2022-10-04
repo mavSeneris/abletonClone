@@ -3,6 +3,12 @@ import navLogo from '../assets/pngegg.png'
 
 
 export default function Navbar() {
+
+
+
+
+
+
     return (
         <header className='main-nav'>
             <nav className="primary">
@@ -21,7 +27,7 @@ export default function Navbar() {
                     <li className="main-nav__link-list__item--account"><a href="#">Log in for register</a></li>
                 </ul>
             </nav>
-            <hr/>
+            <hr />
             <nav className='secondary'>
                 <ul className="main-nav__link-list--secondary">
                     <li className="main-nav__link-list__item is-active"><a href="#">About</a></li>

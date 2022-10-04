@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     /** Color Pallete */
-    --light: #fff;
+    --light: rgb(240, 240, 240);
     --dark: #0b0b0b;
-    --line: #d5d5d5;
+    --line: #f0f0f0;
     --yellow: #fbffa7;
     --blue: #0000ff;
     --light-blue: #b1c5ff;
@@ -22,12 +22,19 @@
     --ff-secondary: 'Open Sans', sans-serif;
     /* font-weights */
     --fw-regular: 400;
-    --fw-bold: 500;
+    --fw-bold: 600;
     /* font-sizes */
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
+    --fs-h1: 5rem;
+    --fs-h2: 3.25rem;
+    --fs-h3: 1.2rem;
     --fs-body: 1rem;
+}
+
+body {
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 a {
@@ -35,55 +42,59 @@ a {
     text-decoration: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-hr{
+hr {
     color: var(--line);
     margin: none;
 }
 
-.is-active > a{
+.is-active>a {
     color: var(--orange);
 }
 
 
+.App {
+    max-width: 1600px;
+    min-width: 80vw;
+    background-color: white;
+    overflow: hidden;
+}
+
 /** Navbar-styles */
-.primary, .secondary {
+.primary,
+.secondary {
     display: flex;
     font-family: var(--ff-primary);
     font-size: var(--fs-h3);
     font-weight: var(--fw-bold);
+    padding: 0 40px 0 40px;
 }
 
-.main-nav__logo {
-    width: 100px;
-    height: 100px;
-}
 
 .main-nav__link-list--primary {
     display: flex;
     width: 100vw;
-    gap: 30px;
+    gap: 35px;
     padding: 12px 0 0 20px;
+    letter-spacing: -1px;
 }
 
-.main-nav__link-list--secondary {
-    display: flex;
-    width: 100vw;
-    gap: 30px;
-    padding: 12px 0 0 20px;
-    font-size: var(--fs-body);
-    font-weight: var(--fw-regular);
+.main-nav__logo {
+    width: 80px;
+    height: 80px;
+    padding-top: 15px;
 }
 
 /* More + */
-.main-nav__link-list__item:nth-child(6) a{
+.main-nav__link-list__item:nth-child(6) a {
     color: var(--orange);
 }
+
 /* Try live for free */
-.main-nav__link-list__item--try a{
+.main-nav__link-list__item--try a {
     color: var(--blue);
 }
 
@@ -92,3 +103,35 @@ hr{
     margin-right: 10px;
 }
 
+.main-nav__link-list--secondary {
+    display: flex;
+    width: 100vw;
+    gap: 30px;
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    padding-left: 0px;
+}
+
+/** Main page  */
+
+.page-about {
+    display: flex;
+    justify-content: center;
+}
+
+.page-about__image__container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.page-about__ableton-logo {
+    color: var(--orange);
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
