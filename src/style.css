@@ -58,7 +58,6 @@ hr {
 
 .App {
     max-width: 1600px;
-    min-width: 80vw;
     background-color: white;
     overflow: hidden;
 }
@@ -117,14 +116,17 @@ hr {
 .page-about {
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
+/* Main Image */
 .page-about__image__container {
     position: relative;
     text-align: center;
     color: white;
 }
 
+/* Main logo */
 .page-about__ableton-logo {
     color: var(--orange);
     font-family: var(--ff-primary);
@@ -135,3 +137,11 @@ hr {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.page-about__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-text {}
