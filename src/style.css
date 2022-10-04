@@ -144,4 +144,8 @@ hr {
     align-items: center;
 }
 
-.body-text {}
+.page-about__collage__background{
+    background-color: var(--yellow);
+    width: 500px;
+    height: 500px;
+}
