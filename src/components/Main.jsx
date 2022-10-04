@@ -9,10 +9,6 @@ import photo6 from "../assets/photo-6.jpg"
 import photo7 from "../assets/photo-7.jpg"
 import photo8 from "../assets/photo-8.jpg"
 
-
-
-
-
 export default function Main() {
     return (
         <div className="page-about">
@@ -23,7 +19,7 @@ export default function Main() {
 
             <div className="page-about__text">
                 <div className="body-text">
-                    <h1>We make Live, Push and Link — unique software and hardware for music creation and performance. With these products, our community of users creates amazing things.</h1>
+                    <h1>We make <a href="#">Live</a>, <a href="#">Push</a> and <a href="#">Link</a> — unique software and hardware for music creation and performance. With these products, our community of users creates amazing things.</h1>
                     <p>Ableton was founded in 1999 and released the first version of Live in 2001. Our products are used by a community of dedicated musicians, sound designers, and artists from across the world.</p>
                 </div>
             </div>

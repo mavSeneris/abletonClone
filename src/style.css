@@ -25,8 +25,8 @@
     --fw-bold: 600;
     /* font-sizes */
     --fs-h1: 5rem;
-    --fs-h2: 3.25rem;
-    --fs-h3: 2.25rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.30rem;
     --fs-body: 1rem;
 }
 
@@ -37,13 +37,13 @@ body {
     margin: 0;
 }
 
-h1{
-    font-size: var(--fs-h2);
+h1 {
+    font-size: var(--fs-h3);
     font-weight: var(--fw-regular);
 }
 
-p{
-    font-size: var(--fs-h3);
+p {
+    font-size: var(--fs-body);
 }
 
 a {
@@ -125,6 +125,7 @@ hr {
 .page-about {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -133,6 +134,7 @@ hr {
     position: relative;
     text-align: center;
     color: white;
+    margin: 0 80px 80px 80px;
 }
 
 /* Main logo */
@@ -152,27 +154,32 @@ hr {
     justify-content: center;
     align-items: center;
     font-family: var(--ff-primary);
+    width: 700px;
 }
 
-.bg-lemonade{
+.body-text a{
+    color: var(--blue);
+}
+
+.bg-lemonade {
     background-color: var(--yellow);
     width: 500px;
     height: 500px;
 }
 
-.bg-spearmint{
+.bg-spearmint {
     background-color: var(--green);
     width: 500px;
     height: 700px;
 }
 
-.bg-lavender{
+.bg-lavender {
     background-color: var(--pink);
     width: 500px;
     height: 700px;
 }
 
-.bg-periwinkle{
+.bg-periwinkle {
     background-color: var(--light-blue);
     width: 500px;
     height: 700px;
