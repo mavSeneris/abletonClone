@@ -21,12 +21,12 @@
     --ff-primary: 'Jost', sans-serif;
     --ff-secondary: 'Open Sans', sans-serif;
     /* font-weights */
-    --fw-regular: 400;
+    --fw-regular: 500;
     --fw-bold: 600;
     /* font-sizes */
     --fs-h1: 5rem;
     --fs-h2: 3.25rem;
-    --fs-h3: 1.2rem;
+    --fs-h3: 2.25rem;
     --fs-body: 1rem;
 }
 
@@ -35,6 +35,15 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+}
+
+h1{
+    font-size: var(--fs-h2);
+    font-weight: var(--fw-regular);
+}
+
+p{
+    font-size: var(--fs-h3);
 }
 
 a {
@@ -142,10 +151,29 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--ff-primary);
 }
 
-.page-about__collage__background{
+.bg-lemonade{
     background-color: var(--yellow);
     width: 500px;
     height: 500px;
+}
+
+.bg-spearmint{
+    background-color: var(--green);
+    width: 500px;
+    height: 700px;
+}
+
+.bg-lavender{
+    background-color: var(--pink);
+    width: 500px;
+    height: 700px;
+}
+
+.bg-periwinkle{
+    background-color: var(--light-blue);
+    width: 500px;
+    height: 700px;
 }
