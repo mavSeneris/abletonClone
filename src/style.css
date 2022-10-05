@@ -32,8 +32,8 @@
 
 body {
     background-color: rgb(194, 194, 194);
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
     margin: 0;
     /* overflow-x: hidden; */
 }
@@ -67,6 +67,7 @@ hr {
 
 
 .App {
+    width: 100vw;
     max-width: 1600px;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
