@@ -1,5 +1,5 @@
 import React from "react";
-import mainImage from "../assets/header.png"
+import mainImage from "../assets/header.jpeg"
 import photo1 from "../assets/photo-1.jpg"
 import photo2 from "../assets/photo-2.jpg"
 import photo3 from "../assets/photo-3.jpg"
@@ -14,7 +14,7 @@ export default function Main() {
         <div className="page-about">
             <div className="page-about__image__container">
                 <h1 className="page-about__ableton-logo">Ableton</h1>
-                <img className="page-about__main-image" src={mainImage} />
+                {/* <img className="page-about__main-image" src={mainImage} /> */}
             </div>
 
             <div className="page-about__text">

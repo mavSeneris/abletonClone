@@ -133,10 +133,15 @@ hr {
 
 /* Main Image */
 .page-about__image__container {
+    width: 85%; height: 60em;
     position: relative;
     text-align: center;
     color: white;
     margin: 0 80px 80px 80px;
+    background-image: url("../src/assets/header.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Main logo */
