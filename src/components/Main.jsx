@@ -92,9 +92,11 @@ export default function Main() {
 
 
             <div className="page-about__collage page-about__collage--improving">
-                <div className="page-about__collage__background bg-lavender"></div>
-                <img className="page-about__collage-image_six" src={photo6} />
-                <img className="page-about__collage-image_seven" src={photo7} />
+                <div className="page-about__collage__background bg-lavender">
+                    <img className="page-about__collage-image_six" src={photo6} />
+                    <img className="page-about__collage-image_seven" src={photo7} />
+                </div>
+
             </div>
 
             <div className="page-about__text">
@@ -105,12 +107,13 @@ export default function Main() {
             </div>
 
             <div className="page-about__collage page-about__collage--job-teaser">
+                <img className="page-about__collage-image_Eight" src={photo8} />
                 <div className="page-about__collage__background bg-periwinkle">
                     <h1> We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
-                        <a href="#">See latest jobs</a>
+
+                        <a href="#" style={{color: '#0000ff'}}>See latest jobs &#10148;</a>
                     </h1>
                 </div>
-                <img className="page-about__collage-image_Eight" src={photo8} />
             </div>
 
 
