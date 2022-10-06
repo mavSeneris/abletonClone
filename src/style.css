@@ -163,6 +163,8 @@ hr {
     align-items: center;
     font-family: var(--ff-primary);
     width: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .body-text a {
