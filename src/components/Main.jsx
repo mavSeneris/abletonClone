@@ -25,9 +25,10 @@ export default function Main() {
             </div>
 
             <div className="page-about__collage page-about__collage--products">
-                <div className="page-about__collage__background bg-lemonade"></div>
                 <img className="page-about__collage-image_one" src={photo1} />
-                <img className="page-about__collage-image_two" src={photo2} />
+                <div className="page-about__collage__background bg-lemonade">
+                    <img className="page-about__collage-image_two" src={photo2} />
+                </div>
             </div>
 
             <div className="page-about__text has-video">
@@ -89,7 +90,7 @@ export default function Main() {
 
             <div className="page-about__collage page-about__collage--job-teaser">
                 <div className="page-about__collage__background bg-periwinkle">
-                    <h1> We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us. 
+                    <h1> We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
                         <a href="#">See latest jobs</a>
                     </h1>
                 </div>

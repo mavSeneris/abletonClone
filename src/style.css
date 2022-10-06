@@ -26,8 +26,8 @@
     /* font-sizes */
     --fs-h1: 5rem;
     --fs-h2: 2.25rem;
-    --fs-h3: 1.30rem;
-    --fs-body: 1rem;
+    --fs-h3: 1.7rem;
+    --fs-body: 1.2rem;
 }
 
 body {
@@ -133,7 +133,8 @@ hr {
 
 /* Main Image */
 .page-about__image__container {
-    width: 85%; height: 60em;
+    width: 85%;
+    height: 60em;
     position: relative;
     text-align: center;
     color: white;
@@ -164,18 +165,37 @@ hr {
     width: 700px;
 }
 
-.page-about__collage{
-    padding: 80px 0 80px 0;
-}
-
-.body-text a{
+.body-text a {
     color: var(--blue);
 }
 
+.page-about__collage {
+    width: 85%;
+    padding: 80px 0 80px 0;
+}
+
+.page-about__collage--products {
+    display: grid;
+    grid-template-columns: 150px 250px;
+    grid-template-areas: "one one two";
+    justify-content: center;
+    align-items: center;
+}
+
+.page-about__collage-image_one {
+    grid-area: one;
+    z-index: 2;
+}
+
 .bg-lemonade {
+    padding-left: 25%;
+    grid-area: two;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--yellow);
-    width: 500px;
-    height: 500px;
+    width: 900px;
+    height: 850px;
 }
 
 .bg-spearmint {
