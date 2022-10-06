@@ -1,5 +1,4 @@
 import React from "react";
-import mainImage from "../assets/header.jpeg"
 import photo1 from "../assets/photo-1.jpg"
 import photo2 from "../assets/photo-2.jpg"
 import photo3 from "../assets/photo-3.jpg"
@@ -8,6 +7,8 @@ import photo5 from "../assets/photo-5.jpg"
 import photo6 from "../assets/photo-6.jpg"
 import photo7 from "../assets/photo-7.jpg"
 import photo8 from "../assets/photo-8.jpg"
+import photo9 from "../assets/photo-9.jpg"
+
 
 export default function Main() {
     return (
@@ -62,9 +63,10 @@ export default function Main() {
             </div>
 
             <div className="page-about__collage page-about__collage--people">
-                <div className="page-about__collage__background bg-spearmint"></div>
-                <img className="page-about__collage-image_three" src={photo3} />
-                <img className="page-about__collage-image_four" src={photo4} />
+                <div className="page-about__collage__background bg-spearmint">
+                    <img className="page-about__collage-image_three" src={photo3} />
+                    <img className="page-about__collage-image_four" src={photo4} />
+                </div>
                 <img className="page-about__collage-image_five" src={photo5} />
             </div>
 
@@ -74,6 +76,20 @@ export default function Main() {
                     <p>Rather than having a one-size-fits-all process, we try to give our people what they need to work their magic and grow. We’ve learned that achieving the best results comes from building teams that are richly diverse, and thus able to explore problems from a wider set of perspectives. We don’t always agree with each other, but opinion and debate are valued and openly encouraged.</p>
                 </div>
             </div>
+
+            <div className="page-about__media page-about__media--large">
+                <img src={photo9} />
+            </div>
+
+            <div className="page-about__text">
+                <div className="body-text">
+                    <h1>We’re passionate about what we do, but we’re equally passionate about improving who we are</h1>
+                    <p>We work hard to foster an environment where people can grow both personally and professionally, and we strive to create a wealth of opportunities to learn from and with each other.</p>
+                    <p>Alongside an internal training program, employees are actively supported in acquiring new knowledge and skills, and coached on applying these in their daily work. In addition, staff-organized development and music salons are a chance to discuss new technologies, production techniques and best practices.</p>
+                </div>
+            </div>
+
+
 
             <div className="page-about__collage page-about__collage--improving">
                 <div className="page-about__collage__background bg-lavender"></div>
