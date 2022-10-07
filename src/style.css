@@ -38,8 +38,12 @@ body {
     /* overflow-x: hidden; */
 }
 
+b{
+    font-weight: 430;
+}
+
 h1 {
-    font-size: var(--fs-h3);
+    /* font-size: var(--fs-h3); */
     font-weight: var(--fw-regular);
 }
 
@@ -88,14 +92,19 @@ hr {
     display: flex;
     width: 100vw;
     gap: 35px;
-    padding: 12px 0 0 20px;
+    padding-left: 20px;
     letter-spacing: -1px;
 }
 
+.main-nav__link-list--primary a{
+    font-size: 0.8em;
+    font-weight: 430;
+}
+
 .main-nav__logo {
-    width: 80px;
-    height: 80px;
-    padding-top: 15px;
+    width: 90px;
+    height: 90px;
+    padding-top: 10px;
 }
 
 /* More + */
@@ -376,6 +385,10 @@ hr {
     height: 100%;
 }
 
+.hr{
+    border-top: 2px #eeeeee solid;
+}
+
 .footer-container {
     font-family: var(--ff-primary);
     width: 85%;
@@ -383,16 +396,27 @@ hr {
 
 .footer-title {
     font-family: var(--ff-primary);
-    font-size: var(--fs-h1);
-    padding-left: 40px;
+    font-size: var(--fs-h3);
+    /* padding-left: 40px; */
+    padding: 40px 0px 20px 0px;
 }
 
 .footer-grid-container {
     /* width: 100%; */
     display: grid;
     grid-template-columns: 400px 1fr 1fr;
-    row-gap: 30px;
+    row-gap: 60px;
     font-size: 1.2em;
+}
+
+.footer__grid-item{
+    margin: 0;
+    padding: 0px 10px 40px 0px;
+}
+
+.footer__grid-item--newsletter > p {
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .footer__link-list {
@@ -400,10 +424,12 @@ hr {
     width: 100%;
 }
 
+
 .links {
     width: 100%;
     display: flex;
     gap: 20px;
+    padding-left: 0px;
 }
 
 .email {
@@ -424,6 +450,11 @@ button {
     margin: 4px 0px;
     cursor: pointer;
     font-family: var(--ff-primary);
+}
+
+.footer__grid-item--langandloc div{
+    margin: 0;
+    padding-bottom: 10px;
 }
 
 .lang {
@@ -454,7 +485,12 @@ button {
 
 .footer__link-list {
     grid-column: span 3;
-    padding-bottom: 130px;
+    padding-bottom: 200px;
+}
+
+
+.lists-item{
+    padding-bottom: 5px;
 }
 
 .imprint {
