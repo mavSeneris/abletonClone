@@ -92,8 +92,10 @@ export default function Main() {
 
 
             <div className="page-about__collage page-about__collage--improving">
+
                 <div className="page-about__collage__background bg-lavender">
                     <img className="page-about__collage-image_six" src={photo6} />
+
                     <img className="page-about__collage-image_seven" src={photo7} />
                 </div>
 

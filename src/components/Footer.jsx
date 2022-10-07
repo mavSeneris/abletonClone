@@ -93,7 +93,9 @@ export default function Footer() {
                         </select>
                     </div>
 
-                    <div className="footer__link-list">
+                    
+                </div>
+                <div className="footer__link-list">
                         <ul className="links">
                             <li className="footer__link-list__item"><a href="#">Contact Us</a></li>
                             <li className="footer__link-list__item"><a href="#">Press Resources</a></li>
@@ -102,10 +104,9 @@ export default function Footer() {
                             <li className="footer__link-list__item"><a href="#">Cookie Settings</a></li>
                             <li className="footer__link-list__item imprint"><a href="#">Imprint</a></li>
                             <li><small>Made in Berlin</small></li>
-                            <li><img className="footer__logo" src={navLogo} /></li>
                         </ul>
+                        <img className="footer__logo" src={navLogo} />
                     </div>
-                </div>
             </div>
         </footer>
 
