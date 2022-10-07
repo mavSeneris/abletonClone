@@ -203,7 +203,6 @@ hr {
 }
 
 /* People */
-
 .page-about__collage--people {
     display: grid;
     grid-template-columns: 450px 250px;
@@ -254,19 +253,19 @@ hr {
     height: 710px;
 }
 
-.bg-lavender > img {
+.bg-lavender>img {
     width: 400px;
 }
 
 /* Teaser */
 
-.page-about__collage--job-teaser{
+.page-about__collage--job-teaser {
     width: 85%;
     display: flex;
     justify-content: center;
 }
 
-.page-about__collage--job-teaser img{
+.page-about__collage--job-teaser img {
     width: 500px;
     height: 500px;
 }
@@ -287,4 +286,98 @@ hr {
     flex-direction: column;
     gap: 40px;
     width: 80%;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer-container {
+    font-family: var(--ff-primary);
+    width: 85%;
+}
+
+.footer-title {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h1);
+    padding-left: 40px;
+}
+
+.footer-grid-container {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr;
+    row-gap: 30px;
+}
+
+.footer__link-list {
+    width: 100%;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.email {
+    width: 70%;
+    padding: 9px 9px;
+    border: 1px solid var(--light);
+    resize: vertical;
+    background-color: var(--light);
+    font-family: var(--ff-primary);
+}
+
+button {
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-decoration: none;
+    margin: 4px 0px;
+    cursor: pointer;
+    font-family: var(--ff-primary);
+}
+
+.lang {
+    width: 30%;
+    padding: 4px 20px;
+    border: none;
+    /* border-radius: 4px; */
+    background-color: #f1f1f1;
+}
+
+.loc {
+    width: 50%;
+    padding: 4px 20px;
+    border: none;
+    /* border-radius: 4px; */
+    background-color: #f1f1f1;
+}
+
+.test {
+    display: flex;
+    padding-left: 0px;
+}
+
+.test li {
+    margin-right: 10px;
+}
+
+
+.footer__link-list {
+    grid-column: span 3;
+}
+
+.imprint {
+    margin-right: auto;
+}
+
+.footer__logo {
+    width: 50px;
+    height: 50px;
 }

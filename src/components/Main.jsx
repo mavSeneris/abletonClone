@@ -111,13 +111,10 @@ export default function Main() {
                 <div className="page-about__collage__background bg-periwinkle">
                     <h1> We’re really proud of the work we’ve done so far. But there’s so much more to come. If you’d like to be a part of it, please join us.
 
-                        <a href="#" style={{color: '#0000ff'}}>See latest jobs &#10148;</a>
+                        <a href="#" style={{ color: '#0000ff' }}>See latest jobs &#10148;</a>
                     </h1>
                 </div>
             </div>
-
-
-
         </div>
     )
 }
