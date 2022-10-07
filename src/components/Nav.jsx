@@ -1,13 +1,17 @@
-import React from 'react'
+import React, {useState} from 'react'
 import navLogo from '../assets/pngegg.png'
 
 
 export default function Navbar() {
+    const [white, setWhite] = useState(false)
 
+    function toggleWhite(){
+        setWhite(prevWhite => !prevWhite) 
+    }
 
-
-
-
+    const isWhite = {
+        color: white ? "white" : "black" 
+    }
 
     return (
         <header className='main-nav'>
@@ -15,6 +19,8 @@ export default function Navbar() {
                 <a href='#'>
                     <img className="main-nav__logo" src={navLogo} />
                 </a>
+                <input id='menu' type="checkbox" className='menu-toggle' />
+                <label htmlFor="menu" style={isWhite} className='menu' onClick={toggleWhite}>Menu</label>
                 <ul className='main-nav__link-list--primary'>
                     <li className="main-nav__link-list__item"><a href="#">Live</a></li>
                     <li className="main-nav__link-list__item"><a href="#">Push</a></li>

@@ -122,6 +122,80 @@ hr {
     padding-left: 0px;
 }
 
+.menu-toggle{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+/** Navbar-responsive */
+
+@media (max-width: 1185px){
+
+    .primary,
+    .secondary {
+    display: flex;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    padding: 0 40px 0 20px;
+}
+
+
+    .primary a{
+        z-index: 3;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        top:1.3em;
+        left:5.5em;
+        z-index: 3;
+        font-size: 23px;
+    }
+
+    .main-nav__logo {
+        z-index: 3;
+    }
+
+    .main-nav__link-list--primary {
+       height: 100vh;
+       margin:0; padding:0;
+       position: absolute;
+       left: 0;
+       flex-direction: column;
+       z-index: 2;
+       background-color: #0000ff;
+       transform: translateY(-50em);
+       transition: transform 200ms ease-in-out;
+    }
+
+    .menu-toggle:checked ~ .main-nav__link-list--primary{
+        transform: translateY(0em);
+        transition: transform 200ms ease-in-out;
+    }
+
+    .main-nav__link-list--primary li a{
+        color: white;
+        margin-left:1em;
+        font-size:25px;
+      
+     }
+
+     .main-nav__link-list--primary :nth-child(1){
+        margin-top: 3em
+      
+     }
+
+     .main-nav__link-list__item--try {
+        margin-left: unset;
+        margin-right: 0px;
+    }
+}
+
 /** Main page  */
 
 .page-about {
