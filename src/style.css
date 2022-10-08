@@ -139,6 +139,7 @@ hr {
     display: none;
 }
 
+
 /** Navbar-responsive */
 
 @media (max-width: 1185px) {
@@ -180,12 +181,12 @@ hr {
         z-index: 2;
         background-color: #0000ff;
         transform: translateY(-50em);
-        transition: transform 200ms ease-in-out;
+        transition: transform 400ms ease-in-out;
     }
 
     .menu-toggle:checked~.main-nav__link-list--primary {
         transform: translateY(0em);
-        transition: transform 200ms ease-in-out;
+        transition: transform 600ms ease-in-out;
     }
 
     .main-nav__link-list--primary li a {
