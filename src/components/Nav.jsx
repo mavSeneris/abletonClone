@@ -12,10 +12,7 @@ export default function Navbar() {
     function toggleWhite() {
         setWhite(prevWhite => !prevWhite)
     }
-
-    const display = {
-        display: isMore ? "block" : "none"
-    }
+    
     const isWhite = {
         color: white ? "white" : "black"
     }
