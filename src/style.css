@@ -352,12 +352,12 @@ hr {
     height: 710px;
 }
 
-.page-about__collage-image_six{
+.page-about__collage-image_six {
     width: 400px;
     height: 400px;
 }
 
-.page-about__collage-image_seven{
+.page-about__collage-image_seven {
     width: 600px;
     height: 600px;
 }
@@ -369,14 +369,15 @@ hr {
 /* Teaser */
 
 .page-about__collage--job-teaser {
-    width: 85%;
+    width: 100%;
+    max-width: 1400px;
     display: flex;
     justify-content: center;
 }
 
 .page-about__collage--job-teaser img {
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: 50%;
 }
 
 .bg-periwinkle {
@@ -386,15 +387,14 @@ hr {
     align-items: center;
     padding: 0 20px;
     background-color: var(--light-blue);
-    width: 500px;
-    height: 500px;
+    width: 50%;
 }
 
 .bg-periwinkle h1 {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 80%;
+    font-size: 2em;
 }
 
 /* Footer */
@@ -585,17 +585,38 @@ button {
         gap: 300px;
     }
 
-    .page-about__collage-image_six{
+    .page-about__collage-image_six {
         width: 200px;
         height: 200px;
     }
-    
-    .page-about__collage-image_seven{
+
+    .page-about__collage-image_seven {
         width: 300px;
         height: 300px;
     }
+
+    /* tablet: Teaser */
+    .page-about__collage--job-teaser {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-about__collage--job-teaser img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .bg-periwinkle {
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+        font-size: 0.8em;
+    }
+
 }
 
+/* *PHONE */
 @media(max-width: 415px) {
     .body-text {
         font-size: .65em;
@@ -653,20 +674,20 @@ button {
 
     }
 
-     /* phone: Improving */
-     .bg-lavender {
-        grid-template-columns: 20px 90px; 
+    /* phone: Improving */
+    .bg-lavender {
+        grid-template-columns: 20px 90px;
         width: 250px;
         height: 250px;
     }
 
-    .page-about__collage-image_six{
+    .page-about__collage-image_six {
         width: 140px;
         height: 140px;
         margin-left: 120px;
     }
-    
-    .page-about__collage-image_seven{
+
+    .page-about__collage-image_seven {
         width: 170px;
         height: 170px;
     }
